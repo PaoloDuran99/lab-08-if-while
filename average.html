@@ -3,10 +3,35 @@
 		<body>
 			<script>
 				//asks user for string value inputs
-				var input1 = prompt ("Please give me a number...");
-				var input2 = prompt ("Please give me a number...");
-				var input3 = prompt ("Please give me a number...");
-				var input4 = prompt ("Please give me a number...");
+				var divide = 0;
+				for (var i = 0; i <= 4; i++)
+				{
+					if (i === 1)
+					{
+						var input1 = prompt ("Please give me a number...");
+						divide = divide + 1;
+						console.log (divide);
+					}
+					else if (i === 2)
+					{
+						var input2 = prompt ("Please give me a number...");
+						divide = divide + 1;
+						console.log (divide);
+					}
+					else if (i === 3)
+					{
+						var input3 = prompt ("Please give me a number...");
+						divide = divide + 1;
+						console.log (divide);
+					}
+					else if(i === 4)
+					{
+						var input4 = prompt ("Please give me a number...");
+						divide = divide + 1;
+						console.log (divide);
+					}	
+				}
+
 				
 				//changes inputs from string values to number values
 				var num1 = parseInt (input1, 10);
@@ -15,7 +40,7 @@
 				var num4 = parseInt (input4, 10);
 				
 				//finds the average of all the numbers
-				var average = (num1 + num2 + num3 + num4) / 4;
+				var average = (num1 + num2 + num3 + num4) / divide;
 				
 				console.log("The average is " + average);
 			</script>
