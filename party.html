@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html>
+		<body>
+			<script>
+				//starting message
+				console.log("Let's party...");
+				
+				var start = prompt ("How long 'til the party?");
+				
+				//parseInt ((string variable), 10) will always be ten 
+				
+				//changes start(a string value) to num(a number value)
+				var num = parseInt (start, 10);
+				
+				if (num < 1)
+				{
+					console.log("PARTY NOW!!!!")
+				}
+				
+				for (var t = num; t >= 1; t = t - 1)
+				{
+					//displays the countdown of numbers
+					console.log(t);
+					// displays party time after 1 
+					if (t <= 1)
+					{
+						console.log("PARTY TIME!!!!")
+					}
+				}
+			</script>
+		</body>
+	</html>

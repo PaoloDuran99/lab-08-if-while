@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+		<body>
+			<script>
+				var input1 = prompt ("Please give me a number...");
+				var input2 = prompt ("Please give me a number...");
+				var input3 = prompt ("Please give me a number...");
+				var input4 = prompt ("Please give me a number...");
+				
+				var num1 = parseInt (input1, 10);
+				var num2 = parseInt (input2, 10);
+				var num3 = parseInt (input3, 10);
+				var num4 = parseInt (input4, 10);
+				
+				//checks num1 against all other values
+				if (num1 < num2 && num3 && num4)
+				{
+					//checks num2 against all other values
+					if (num2 < num3 && num4)
+					{
+						//checks num3 against all other values
+						if (num3 < num4)
+						{
+							console.log("The largest number is number 4, " + num4)
+						}
+						else
+						{
+							console.log("The largest number is number 3, " + num3)
+						}
+					}
+					else
+					{
+						console.log("The largest number is number 2, " + num2);
+					}
+				}
+				else
+				{
+					console.log("The largest number is number 1, " + num1);
+				}
+			</script>
+		</body>
+	</html>
